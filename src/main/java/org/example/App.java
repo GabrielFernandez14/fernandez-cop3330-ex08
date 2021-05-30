@@ -28,16 +28,18 @@ public class App
         Scanner numSlicesInput = new Scanner(System.in);
         int numSlices = numSlicesInput.nextInt();
 
+        int totalSlices = numSlices * numPizzas;
+
         // Print out the user's input
         System.out.println(numPeople + " people with " + numPizzas
-                        + " pizzas with " + numSlices + " slices per pizza");
+                        + " pizzas (" + totalSlices + " slices)");
 
         // Calculate via division and find the remainder using the mod operator
         int slicesPerPerson = (numPizzas * numSlices) / numPeople;
         int leftoverSlices = (numPizzas * numSlices) % numPeople;
 
         // Print output
-        System.out.println("Each person gets " + slicesPerPerson + " pieces of pizza\n"
+        System.out.println("Each person gets " + slicesPerPerson + " pieces of pizza.\n"
                             + "There are " + leftoverSlices + " leftover pieces.");
     }
 }
