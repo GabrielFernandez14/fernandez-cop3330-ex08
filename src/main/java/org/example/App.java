@@ -29,8 +29,8 @@ public class App
         int numSlices = numSlicesInput.nextInt();
 
         // Print out the user's input
-        System.out.println(numPeople + " people with " + numPizzas + " pizzas with "
-                            + numSlices + " slices per pizza");
+        System.out.println(numPeople + " people with " + numPizzas
+                        + " pizzas with " + numSlices + " slices per pizza");
 
         // Calculate via division and find the remainder using the mod operator
         int slicesPerPerson = (numPizzas * numSlices) / numPeople;
